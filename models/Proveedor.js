@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const db = require("../config/database");
 
-// Modelo de Cliente
+// Modelo de Proveedor
 const Proveedor = config.define(
   "Proveedor",
   {

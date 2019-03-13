@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const db = require("../config/database");
 
-// Modelo de Cliente
+// Modelo de Aeropuerto
 const Aeropuerto = config.define(
   "Aeropuerto",
   {

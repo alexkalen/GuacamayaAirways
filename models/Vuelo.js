@@ -1,7 +1,10 @@
 const Sequelize = required('sequelize');
 const db = require('../config/database');
 
-const Vuelo = db.define('vuelo', {
+//Modelo de Vuelo
+const Vuelo = db.define(
+    "Vuelo", 
+    {
     fecha: {
         type: Sequelize.DATE,
         allowNull: false
@@ -19,4 +22,6 @@ const Vuelo = db.define('vuelo', {
         type: Sequelize.TIME,
         allowNull: false
     }
-})
+});
+
+module.exports = Vuelo;
