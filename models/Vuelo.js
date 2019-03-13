@@ -22,6 +22,11 @@ const Vuelo = db.define(
         type: Sequelize.TIME,
         allowNull: false
     }
-});
+    },
+    {
+        timestamps: false,
+        freezeTableName: true
+    }
+    );
 
 module.exports = Vuelo;

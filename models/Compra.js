@@ -5,14 +5,14 @@ const db = require("../config/database");
 const Compra = db.define(
   "Compra",
   {
-    Metodo: {
+    metodo: {
       type: sequelize.STRING,
       allowNull: false,
       validate: {
         notEmpty: true
       }
     },
-    Monto: {
+    monto: {
       type: sequelize.INTEGER,
       allowNull: false,
 
@@ -21,7 +21,7 @@ const Compra = db.define(
         notEmpty: true
       }
     },
-    Fecha: {
+    fecha: {
       type: sequelize.DATE,
       allowNull: false,
       validate: {

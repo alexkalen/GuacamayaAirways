@@ -5,7 +5,7 @@ const db = require("../config/database");
 const Proveedor = config.define(
   "Proveedor",
   {
-    Nombre: {
+    nombre: {
       type: sequelize.STRING,
       allowNull: false,
 
@@ -13,7 +13,7 @@ const Proveedor = config.define(
         notEmpty: true
       }
     },
-    PrecioKm: {
+    preciokm: {
       type: sequelize.INTEGER,
       allowNull: false,
 
@@ -22,7 +22,7 @@ const Proveedor = config.define(
         notEmpty: true
       }
     },
-    TiempoRes: {
+    tiempoRes: {
       type: sequelize.INTEGER,
       allowNull: false,
 
